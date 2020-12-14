@@ -1,0 +1,46 @@
+{
+  "name": "@airport-discovery/notams",
+  "version": "0.0.0",
+  "description": "Get Latest NOTAMs (Notices to Airmen) from notams.aim.faa.gov",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx index.js",
+    "prepush": "yarn run lint",
+    "release-patch": "yarn version --patch",
+    "release-minor": "yarn version --minor",
+    "release-major": "yarn version --major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airport-Discovery/notams.git"
+  },
+  "author": {
+    "name": "Airport Discovery",
+    "email": "hello@airportdiscovery.com",
+    "url": "https://github.com/Airport-Discovery"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Airport-Discovery/notams/issues"
+  },
+  "homepage": "https://github.com/Airport-Discovery/notams#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.2",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn run prepush"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
